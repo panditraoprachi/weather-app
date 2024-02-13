@@ -1,0 +1,141 @@
+/* :root{
+    --blue-1:#3c429e;
+    --blue-2:#4c52ad;
+    --yellow-1:#fac742;
+    --white:#fff;
+    --grey1:#ededed;
+    --shadow-dark:rgba(0,0,0,0.3);
+    --shadow-light:rgba(255,255,255,0.1);
+} */
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:blue;
+} */
+.body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color:#4c52ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.container{
+    width: 400px;
+    height: 80vh;
+    background-color: #3c429e;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+.upper-data{
+    position: relative;
+    overflow: hidden;
+    width: 106%;
+    left: -2.8%;
+    height: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.lower-data{
+    position: relative;
+    overflow: hidden;
+    width: 110%;
+    left: -5%;
+    height: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.upper-data img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.weather-data{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.location{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+.temp{
+    color:aliceblue;
+     font-size: 4em;
+     text-align: center;
+     font-weight: 900;
+}
+.more-info-label{
+    color: white;
+
+}
+.more-info-container{
+    flex: 1;
+     display: flex;
+    flex-direction: row;
+    background-color:rgba(255,255,255,0.1);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 1em;
+    flex-wrap: wrap;
+    height: 80%;
+    flex-direction: row;
+   
+}
+.info-block{
+width:50%;
+display: flex;
+flex-direction: row;
+}
+.info-block-label{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-block-label img{
+    width: 1em;
+}
+.info-block-label span{
+   color:aliceblue;
+   font-size: 0.8em;
+}
+.info-block-value{
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.search{
+    background-color:#4c52ad;
+     margin-top: 1em;
+    text-align: center;
+}
+.search input{
+    outline: none;
+    border:none;
+    border-radius: 10px;
+    padding:1em ;
+    font-size: 0.8 em;
+}
